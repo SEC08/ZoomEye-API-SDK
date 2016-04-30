@@ -2,11 +2,26 @@
 # -*-coding:utf-8 -*-
 
 
+import sys
+import requests
 import zoomeye.zoomeye as zoomeye
 
-test = zoomeye.myeye()
+test = zoomeye.zoomeye()
 
+username = 'your mail@qq.com'
+password = 'your ZoomEye account passwod'
 
-test.search('web',query='dedecms',page=5,config=None)
+token = test.logIn(username, password)
 
-test.search('host',query='port:21',page=5,config=None)
+result = test.search('web',query='HP Color LaserJet',page=1,facets='app,os')
+
+print result
+
+target = []
+
+for i in result:
+    for x in i['matches']:
+        print x['ip']
+        target.append(x['ip'][0])
+
+print target
