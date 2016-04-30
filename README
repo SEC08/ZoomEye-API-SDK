@@ -18,7 +18,7 @@ Zoomeye python api
                               WNXXXXXNW                                         
                                                                 ZoomEye V1.0    
                                                                                 
-PS: 依赖于python requests模块。使用前请安装
+PS: Depends on python requests module,please install before use.
 
 install:
     python setup.py install
