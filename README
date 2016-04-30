@@ -19,30 +19,3 @@ Zoomeye python api
                                                                 ZoomEye V1.0    
                                                                                 
 PS: 依赖于python requests模块。使用前请安装
-
-windows安装:
-    1.png && 2.png
-
-linux安装：
-    1.png && 2.png
-
-windows使用:
-    3.png && 4.png && 5.png && 6.png
-    test.py
-    搜索结果会保存在result.txt中。
-    如果文件存在就会改名为result + 当前时间 + .txt的格式
-    为了方便 使用 token会保存在token.tmp中
-    下次使用会直接读取文件无需登录。如果token失效，会提示重新登录。
-
-linux使用：
-    3.png 
-    test.py
-    其他和windows一致。
-
-
-search() 
-
-第一个参数指定搜索类型,分为web和host两种。
-第二个参数为搜索内容。详情语法参考zoomeye api 
-第三个参数为搜索内容页数。默认是一页。
-第四个参数为预留的配置项。为后续更改扩展用
